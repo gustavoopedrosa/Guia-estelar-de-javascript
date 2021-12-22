@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando os conceitos do Curso</title>
+</head>
+
+<body>
+    <a href="#subtitulo">Subitulo</a>
+    <button data-button>Transformar a página</button>
+    <h1 style="margin-bottom: 1500px" data-title>Titulo da página</h1>
+
+    <h2 id="subtitulo" data subtitle>Subtitulo</h2>
+    <p data-paragraf>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis voluptatibus pariatur, quos reiciendis commodi cupiditate ut rem, velit impedit dolores atque, sint ad repudiandae modi omnis facilis tenetur blanditiis.</p>
+    <p data-paragraf>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis voluptatibus pariatur, quos reiciendis commodi cupiditate ut rem, velit impedit dolores atque, sint ad repudiandae modi omnis facilis tenetur blanditiis.</p>
+    <p data-paragraf style="margin-bottom: 1500px">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium perferendis voluptatibus pariatur, quos reiciendis commodi cupiditate ut rem, velit impedit dolores atque, sint ad repudiandae modi omnis facilis tenetur blanditiis.</p>
+
+    <script>
+        const transformButton = document.querySelector("button")
+        console.log(transformButton)
+
+        transformButton.addEventListener('click', () => {
+            const title = document.querySelector("h1")
+            const subtitle = document.querySelector("h2")
+    
+            title.innerText = 'Lista de Compras'
+            subtitle.innerText = 'Importancia de se programar'
+            
+        })
+    </script>
+</body>
+
+</html>
